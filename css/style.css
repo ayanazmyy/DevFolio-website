@@ -1,0 +1,540 @@
+body {
+    overflow-x: hidden;
+}
+/* ------------ navbar section ------------ */
+.nav-container {
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.navbar li {
+    padding: 0 15px;
+}
+
+.navbar li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.navbar li a {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* -------------- header section ------------ */
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.header-content{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.678);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-content h1 {
+    font-size: 72px;
+    line-height: 86.4px;
+}
+
+@media screen and (max-width:520px) {
+    .header-content h1 {
+        font-size: 50px !important;
+        line-height: 60px !important;
+    }
+
+    .header-content p {
+        font-size: 24px !important;
+        line-height: 40px !important;
+    }
+}
+
+.header-content p {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+/* ----------------------------------- about section ----------------------------- */
+
+.about-full {
+    background-color: #f5f5f5;
+    padding-top: 64px;
+    padding-bottom: 48px;
+}
+
+.about-full .about-box {
+    padding: 64px 48px;
+}
+
+.about-img {
+    margin-bottom: 32px;
+}
+
+.about-info p {
+    margin-bottom: 16px;
+}
+
+.about-container {
+    background-color: white;
+}
+
+.about-skills .progress {
+    margin-bottom: 19px;
+    margin-top: 8px;
+    height: 12px;
+    border-radius: 0;
+}
+
+.about-box {
+    color: #4e4e4e;
+}
+
+.about-right h5 {
+    margin-bottom: 48px;
+    padding-bottom: 8px;
+    font-size: 32px;
+    line-height: 38.4px;
+    position: relative;
+}
+
+.about-right h5::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+}
+
+.about-right p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+/* --------------------------- services section ------------------ */
+
+.services {
+    padding-top: 48px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.services .serv-title {
+    margin-bottom: 64px;
+}
+.services .serv-title h3{
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #1e1e1e;
+    margin-bottom: 8px;
+}
+
+.services .serv-title p {
+    color: #4e4e4e;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.services .serv-title p::after {
+    content: "";
+    height: 4px;
+    background-color: #0078ff;
+    width: 40px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.serv-item {
+    background-color: white;
+    padding-bottom: 40px;
+    margin-bottom: 48px;
+}
+
+.services .serv-circle {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #0078ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.services .serv-circle:hover {
+    border: 10px solid #eee;
+    background-color: #0078ff;
+    color: white;
+}
+
+.serv-item {
+    padding-top: 40px;
+    border-radius: 16px;
+}
+
+.serv-item h2 {
+    padding: 10px 0;
+    margin-bottom: 8px;
+    font-size: 22.4px;
+    line-height: 24.88px;
+    color: #1e1e1e;
+}
+
+.serv-item p {
+    color: #4e4e4e;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.serv-circle i {
+    width: 100px;
+    height: 100px;
+}
+
+/* ------------------------ numbers section ------------------------- */
+
+.numbers {
+    padding: 128px 0;
+    color: white;
+    background-image: url(../images/counters-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.numbers .num-circle {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 7px solid white;
+    border-radius: 50%;
+}
+
+.numbers .blue-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0078ff;
+    opacity: 0.7;
+}
+.numbers .num-content {
+    margin-bottom: 28px;
+}
+
+.numbers p {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.numbers .num-circle i {
+    color: white;
+}
+
+/* ----------------------- portfolio section ----------------------- */
+
+.portfolio {
+    text-align: center;
+    padding-top: 64px;
+    background-color: #f5f5f5;
+}
+
+.portfolio .port-title h3 {
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #1e1e1e;
+}
+
+.portfolio .port-title {
+    margin-bottom: 64px;
+}
+
+.portfolio .port-title p {
+    color: #4e4e4e;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.portfolio .port-title p::after {
+    content: "";
+    height: 4px;
+    background-color: #0078ff;
+    width: 40px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portfolio .port-item {
+    background-color: white;
+    margin-bottom: 48px;
+    overflow: hidden;
+}
+
+.portfolio .port-item h2 {
+    font-size: 19.2px;
+    line-height: 23px;
+    color: #1e1e1e;
+}
+
+.portfolio .port-item span {
+    font-size: 12.8px;
+    line-height: 19.2px;
+    color: #4e4e4e;
+}
+
+.portfolio .port-item .first-sp {
+    color: #0078ff;
+}
+
+.portfolio .port-item .port-desc {
+    padding: 32px 10px 16px 14px;
+    text-align: left;
+}
+
+.port-desc .port-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 3px solid #0078ff;
+}
+
+.portfolio .port-item img {
+    transition: all 0.5s;
+}
+
+.portfolio .port-item img:hover {
+    transform: scale(1.1, 1.1);
+    
+}
+
+/* ----------------------- testimonial section ----------------------------------- */
+
+.testimonial {
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 128px 0;
+}
+
+.testimonial h5 {
+    margin: 20px 0;
+}
+
+.testimonial .blue-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0078ff;
+    opacity: 0.7;
+}
+
+.carousel-item img {
+    width: 180px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators button {
+    position: relative;
+    top: 50px;
+}
+
+
+/* --------------------------- blog section ------------------------- */
+
+.blog {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #f5f5f5;
+}
+
+.blog .blog-title {
+    margin-bottom: 64px;
+}
+.blog .blog-title h3{
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #1e1e1e;
+    margin-bottom: 8px;
+}
+
+.blog .blog-title p {
+    color: #4e4e4e;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.blog .blog-title p::after {
+    content: "";
+    height: 4px;
+    background-color: #0078ff;
+    width: 40px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.blog .tail-left img {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.blog-item h3 a {
+    text-decoration: none;
+    color: #1e1e1e;
+    transition: all 1s;
+    font-size: 20.8px;
+    line-height: 24.96px;
+}
+
+.blog-item h3 a:hover {
+    color: #0078ff;
+}
+
+.blog-item {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.blog-item .blog-content {
+    padding: 16px;
+    color: #4e4e4e;
+}
+
+.blog .flag {
+    color: white;
+    background-color: #0078ff;
+    font-size: 11.2px;
+    line-height: 13.44px;
+    padding: 5px 15px;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+/* ---------------------------- contact section ---------------------------------- */
+
+.contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 128px 0 48px 0;
+}
+
+.contact .blue-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0078ff;
+    opacity: 0.7;
+}
+
+.contact .container {
+    padding: 48px;
+    position: relative;
+    background-color: white;
+}
+.contact h5 {
+    text-align: left;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: #4e4e4e;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 48px;
+}
+
+.contact h5::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 25%;
+    height: 3px;
+    background-color: #0078ff;
+}
+
+.contact form button {
+    padding: 10px 24px;
+    font-size: 19.2px;
+    line-height: 28.8px;
+    color: white;
+    background-color: #0078ff;
+    border: none;
+}
+
+.contact-right {
+    text-align: left;
+}
+
+.contact .contact-circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-right p {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4e4e4e;
+}
+
+
+
+.contact-right ul li {
+    font-size: 16px;
+    line-height: 32px;
+    color: #4e4e4e;
+}
+
+/* -------------- footer section --------------- */
+
+.footer {
+    background-color: #0062d3;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+}
